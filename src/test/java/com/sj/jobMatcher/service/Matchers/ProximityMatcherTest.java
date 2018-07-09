@@ -34,7 +34,7 @@ public class ProximityMatcherTest {
 
         // job nearby in sydney
         job.setLocation(new Location( 33.8688, 151.0));
-        assertFalse("Worker was not matched to a job near Sydney", proximityMatcher.matchJob(worker, job));
+        assertTrue("Worker was not matched to a job near Sydney", proximityMatcher.matchJob(worker, job));
     }
 
     @Test

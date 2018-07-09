@@ -50,7 +50,7 @@ public class MatchingServiceImpl implements MatchingService {
         if(worker != null )
             return jobsCache.stream()
                     .filter(job -> match(worker, job))
-                    .peek(job -> LOGGER.debug(String.format(" Matching Job ID [%s] with Title '%s'", job.getJobId(), job.getJobTitle())))
+//                    .peek(job -> LOGGER.debug(String.format(" Matching Job ID [%s] with Title '%s'", job.getJobId(), job.getJobTitle())))
                     .limit(maxResults)
                     .collect(Collectors.toList());
         else
@@ -75,6 +75,9 @@ public class MatchingServiceImpl implements MatchingService {
 
     }
 
+    public void setMaxResults(int maxResults) {
+        this.maxResults = maxResults;
+    }
 }
 
 
