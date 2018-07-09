@@ -16,7 +16,7 @@ public class DrivingLicRequiredMatcher implements Matcher {
     public boolean matchJob(final Worker worker, final Job job) {
         boolean result = false;
 
-        if(job.getDriverLicenseRequired())
+        if(worker.getHasDriversLicense())
             result = true;
         else
             result = !job.getDriverLicenseRequired() ? true : worker.getHasDriversLicense();

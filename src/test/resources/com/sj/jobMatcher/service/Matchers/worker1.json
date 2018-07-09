@@ -1,0 +1,54 @@
+{
+  "age": 22,
+  "availability": [
+    {
+      "dayIndex": 3,
+      "title": "Wednesday"
+    },
+    {
+      "dayIndex": 2,
+      "title": "Tuesday"
+    }
+  ],
+  "certificates": [
+    "The Human Handbook",
+    "Outside the Box Thinker",
+    null,
+    "Excellence in Organization",
+    "The Encouraging Word Award",
+    "The Risk Taker",
+    "Healthy Living Promoter",
+    "Office Lunch Expert",
+    "Outstanding Memory Award",
+    "The Asker of Good Questions",
+    "Excellence in Humor and Entertainment",
+    "The Behind the Scenes Wonder",
+    "Calm in the Eye of the Storm",
+    "Outstanding Innovator"
+  ],
+  "email": "angelina.callahan@ewaves.com",
+  "guid": "562f6647bc01a17cbc536358",
+  "hasDriversLicense": true,
+  "isActive": true,
+  "jobSearchAddress": {
+    "latitude": 50.082021,
+    "longitude": 14.336607,
+    "maxJobDistance": 20.0,
+    "unit": "km"
+  },
+  "name": {
+    "first": "Angelina",
+    "last": "Callahan"
+  },
+  "phone": "+1 (826) 553-2128",
+  "rating": 4,
+  "skills": [
+    "Creator of opportunities",
+    "Chief Troublemaker",
+    "Ambassador of buzz",
+    "Chief Amazement Officer"
+  ],
+  "transportation": "CAR",
+  "userId": 10
+}
+

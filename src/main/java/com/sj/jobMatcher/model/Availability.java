@@ -7,6 +7,14 @@ public class Availability {
 
     private String title;
 
+    public Availability() {
+    }
+
+    public Availability(Integer dayIndex, String title) {
+        this.dayIndex = dayIndex;
+        this.title = title;
+    }
+
     // Getters and Setters
 
     public Integer getDayIndex() {

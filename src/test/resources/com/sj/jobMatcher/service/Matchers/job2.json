@@ -1,0 +1,16 @@
+{
+  "about" : "Velit laboris cupidatat proident velit nisi sint do consequat enim minim in. Anim eu est exercitation consequat non adipisicing ipsum esse officia quis nulla eiusmod et officia. Aliquip qui dolor culpa qui est esse ut dolor magna dolore cupidatat.",
+  "billRate" : "$19.77",
+  "company" : "Delphide",
+  "driverLicenseRequired" : false,
+  "guid" : "562f66aa1cba0990d25e4baf",
+  "jobId" : 13,
+  "jobTitle" : "Arts and Crafts Designer",
+  "location" : {
+    "latitude" : 50.019486,
+    "longitude" : 13.639369
+  },
+  "requiredCertificates" : [ "Outstanding Memory Award", "The Encouraging Word Award", "Office Lunch Expert" ],
+  "startDate" : [ 2015, 11, 2, 5, 37, 26, 994000000 ],
+  "workersRequired" : 4
+}

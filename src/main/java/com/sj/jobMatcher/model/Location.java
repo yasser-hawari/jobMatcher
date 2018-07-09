@@ -6,6 +6,14 @@ public class Location implements GeoPoint {
 
     private Double longitude;
 
+    public Location() {
+    }
+
+    public Location(Double latitude, Double longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
+
     // Getters and Setters
 
     public Double getLatitude() {

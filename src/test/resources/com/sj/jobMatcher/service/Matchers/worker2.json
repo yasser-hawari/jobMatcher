@@ -1,0 +1,42 @@
+{
+  "age" : 35,
+  "availability" : [ {
+    "dayIndex" : 6,
+    "title" : "Saturday"
+  }, {
+    "dayIndex" : 4,
+    "title" : "Thursday"
+  }, {
+    "dayIndex" : 2,
+    "title" : "Tuesday"
+  }, {
+    "dayIndex" : 7,
+    "title" : "Sunday"
+  }, {
+    "dayIndex" : 3,
+    "title" : "Wednesday"
+  }, {
+    "dayIndex" : 1,
+    "title" : "Monday"
+  }, null ],
+  "certificates" : [ "Outside the Box Thinker", "The Human Handbook", null, "Excellence in Organization", "The Encouraging Word Award", "Marvelous Multitasker", "The Risk Taker", "Healthy Living Promoter", "Office Lunch Expert", "Outstanding Memory Award", "The Asker of Good Questions", "Excellence in Humor and Entertainment", "The Behind the Scenes Wonder", "Calm in the Eye of the Storm" ],
+  "email" : "dixie.peck@organica.io",
+  "guid" : "562f6647dbed1e116fce5e56",
+  "hasDriversLicense" : true,
+  "isActive" : true,
+  "jobSearchAddress" : {
+    "latitude" : 50.307809,
+    "longitude" : 14.571709,
+    "maxJobDistance" : 30.0,
+    "unit" : "km"
+  },
+  "name" : {
+    "first" : "Dixie",
+    "last" : "Peck"
+  },
+  "phone" : "+1 (958) 490-3095",
+  "rating" : 5,
+  "skills" : [ "Director of First Impressions", "Sous chef", "VP of Misc. Stuff" ],
+  "transportation" : "CAR",
+  "userId" : 24
+}

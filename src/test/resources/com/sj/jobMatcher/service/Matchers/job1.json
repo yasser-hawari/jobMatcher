@@ -1,0 +1,16 @@
+{
+  "about" : "Exercitation sint est et fugiat et. Consequat pariatur cupidatat exercitation aliqua dolor pariatur labore aliquip quis irure irure in laboris cillum. Veniam fugiat quis do laborum est exercitation voluptate dolore anim nulla deserunt. Adipisicing dolore culpa commodo aute qui irure ad id exercitation tempor. In in pariatur laborum irure irure. Ut dolor incididunt consectetur quis id fugiat elit sint proident nostrud culpa enim consectetur.",
+  "billRate" : "$7.47",
+  "company" : "Pholio",
+  "driverLicenseRequired" : true,
+  "guid" : "562f66aa89c9c662fa538fb7",
+  "jobId" : 24,
+  "jobTitle" : "Chief Cheerleader",
+  "location" : {
+    "latitude" : 49.828395,
+    "longitude" : 14.312687
+  },
+  "requiredCertificates" : [ "Outstanding Memory Award", "Marvelous Multitasker", "Calm in the Eye of the Storm" ],
+  "startDate" : [ 2015, 11, 24, 7, 35, 25, 451000000 ],
+  "workersRequired" : 4
+}
