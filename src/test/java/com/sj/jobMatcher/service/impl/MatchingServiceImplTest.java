@@ -3,7 +3,10 @@ package com.sj.jobMatcher.service.impl;
 import com.sj.jobMatcher.model.Job;
 import com.sj.jobMatcher.model.Worker;
 import com.sj.jobMatcher.rest.WorkerNotFoundException;
-import com.sj.jobMatcher.service.*;
+import com.sj.jobMatcher.service.DataIsNotReadyException;
+import com.sj.jobMatcher.service.JobMatcherRegistery;
+import com.sj.jobMatcher.service.Matcher;
+import com.sj.jobMatcher.service.ProviderDataCacheService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,8 +15,10 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static org.mockito.ArgumentMatchers.any;
 

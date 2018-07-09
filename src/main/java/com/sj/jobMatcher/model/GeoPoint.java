@@ -4,7 +4,6 @@ package com.sj.jobMatcher.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.io.Serializable;
-import java.util.Optional;
 
 public interface GeoPoint extends Serializable{
 

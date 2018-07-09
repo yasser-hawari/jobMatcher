@@ -1,7 +1,6 @@
 package com.sj.jobMatcher.model;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Set;
 
 

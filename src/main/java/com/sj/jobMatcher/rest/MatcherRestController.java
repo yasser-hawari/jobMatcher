@@ -40,7 +40,7 @@ public class MatcherRestController {
     }
 
     @ExceptionHandler(DataIsNotReadyException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ErrorResponse dataIsNotReadyException(DataIsNotReadyException e) {
         LOGGER.debug("DataIsNotReadyException handler invoked. ", e);
         return new ErrorResponse(2000, "System data is not ready yet, please try again later.");

@@ -1,6 +1,7 @@
 package com.sj.jobMatcher;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -9,7 +10,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
 
 public class TestUtilities {
 
@@ -31,10 +31,15 @@ public class TestUtilities {
         return objectMapper.readValue(json, valueType);
     }
 
-
     public static <T> T toObjectFromClasspath(String classPathLocation, Class<T> valueType) throws IOException {
         try (InputStream inputStream = TestUtilities.class.getResourceAsStream(classPathLocation)) {
             return objectMapper.readValue(inputStream, valueType);
+        }
+    }
+
+    public static <T> T toObjectFromClasspath(String classPathLocation, TypeReference valueTypeRef) throws IOException {
+        try (InputStream inputStream = TestUtilities.class.getResourceAsStream(classPathLocation)) {
+            return objectMapper.readValue(inputStream, valueTypeRef);
         }
     }
 
