@@ -2,20 +2,20 @@ package com.sj.jobMatcher.rest;
 
 public class ErrorResponse {
 
-    private int code;
+    private int errorCode;
 
-    private String message;
+    private String errorMessage;
 
-    public ErrorResponse(int code, String message) {
-        this.code = code;
-        this.message = message;
+    public ErrorResponse(int errorCode, String errorMessage) {
+        this.errorCode = errorCode;
+        this.errorMessage = errorMessage;
     }
 
-    public int getCode() {
-        return code;
+    public int getErrorCode() {
+        return errorCode;
     }
 
-    public String getMessage() {
-        return message;
+    public String getErrorMessage() {
+        return errorMessage;
     }
 }

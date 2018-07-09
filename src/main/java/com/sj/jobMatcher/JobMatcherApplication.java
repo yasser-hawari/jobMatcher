@@ -2,6 +2,8 @@ package com.sj.jobMatcher;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.retry.annotation.EnableRetry;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 
 /*
@@ -23,6 +25,8 @@ http://test.swipejobs.com/api/jobs
 
  */
 @SpringBootApplication
+@EnableRetry
+@EnableAsync
 public class JobMatcherApplication {
 
 	public static void main(String[] args) {

@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface MatchingService {
 
-
-    List<Job> matchJobs(Long userId) throws WorkerNotFoundException;
+    List<Job> matchJobs(Long userId) throws WorkerNotFoundException, DataIsNotReadyException;
 
 }
