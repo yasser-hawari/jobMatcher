@@ -2,7 +2,7 @@ package com.sj.jobMatcher.service.impl;
 
 import com.sj.jobMatcher.model.Job;
 import com.sj.jobMatcher.model.Worker;
-import com.sj.jobMatcher.rest.WorkerNotFoundException;
+import com.sj.jobMatcher.service.WorkerNotFoundException;
 import com.sj.jobMatcher.service.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,6 @@ public class MatchingServiceImpl implements MatchingService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MatchingServiceImpl.class);
 
-    protected int maxResults = 3;
 
     private JobMatcherRegistery jobMatcherRegistery;
 
@@ -33,7 +32,7 @@ public class MatchingServiceImpl implements MatchingService {
     }
 
     @Override
-    public List<Job> matchJobs(Long userId) throws WorkerNotFoundException, DataIsNotReadyException {
+    public List<Job> matchJobs(Long userId, int maxResults) throws WorkerNotFoundException, DataIsNotReadyException {
         LOGGER.debug(String.format("Matching jobs for worker [%s]", userId));
         if(userId == null)
             throw new IllegalArgumentException("workerId is required");
@@ -75,9 +74,6 @@ public class MatchingServiceImpl implements MatchingService {
 
     }
 
-    public void setMaxResults(int maxResults) {
-        this.maxResults = maxResults;
-    }
 }
 
 

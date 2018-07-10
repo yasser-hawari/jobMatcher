@@ -2,7 +2,7 @@ package com.sj.jobMatcher.service.impl;
 
 import com.sj.jobMatcher.model.Job;
 import com.sj.jobMatcher.model.Worker;
-import com.sj.jobMatcher.rest.WorkerNotFoundException;
+import com.sj.jobMatcher.service.WorkerNotFoundException;
 import com.sj.jobMatcher.service.DataIsNotReadyException;
 import com.sj.jobMatcher.service.JobMatcherRegistery;
 import com.sj.jobMatcher.service.Matcher;
@@ -76,11 +76,11 @@ public class MatchingServiceImplTest {
 
         Mockito.when(jobMatcherRegistery.getMatchers()).thenReturn(matchers);
 
-        matchingService.setMaxResults(3);
-        List<Job> jobs = matchingService.matchJobs(1L);
+
+        List<Job> jobs = matchingService.matchJobs(1L, 3);
 
         // none shall pass !
-        Assert.assertNotEquals(jobs.size(), matchingService.maxResults);
+        Assert.assertNotEquals(jobs.size(), 3);
     }
 
 
@@ -107,11 +107,10 @@ public class MatchingServiceImplTest {
 
         Mockito.when(jobMatcherRegistery.getMatchers()).thenReturn(matchers);
 
-        matchingService.setMaxResults(3);
-        List<Job> jobs = matchingService.matchJobs(1L);
+        List<Job> jobs = matchingService.matchJobs(1L, 3);
 
-        // none shall pass !
-        Assert.assertEquals(jobs.size(), matchingService.maxResults);
+        // all three shall pass
+        Assert.assertEquals(jobs.size(), 3);
     }
 
 

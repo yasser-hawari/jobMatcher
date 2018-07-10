@@ -40,7 +40,7 @@ public class MatcherRestControllerTest {
         List<Job> jobs = TestUtilities.toObjectFromClasspath("/com/sj/jobMatcher/rest/jobs.json",
                                                 new TypeReference<List<Job>>(){});
 
-        Mockito.when(matchingService.matchJobs(1L)).thenReturn(jobs);
+        Mockito.when(matchingService.matchJobs(1L, 3)).thenReturn(jobs);
 
         mvc.perform(get("/api/workers/1/matchedJobs")
                 .accept(MediaType.APPLICATION_JSON)
@@ -52,7 +52,7 @@ public class MatcherRestControllerTest {
     @Test
     public void matchJobsWithZeroMatch() throws Exception {
 
-        Mockito.when(matchingService.matchJobs(1L)).thenReturn(new ArrayList<>());
+        Mockito.when(matchingService.matchJobs(1L, 3)).thenReturn(new ArrayList<>());
 
         mvc.perform(get("/api/workers/1/matchedJobs")
                 .accept(MediaType.APPLICATION_JSON)
@@ -65,7 +65,7 @@ public class MatcherRestControllerTest {
     @Test
     public void matchJobsWithServiceNotReady() throws Exception {
 
-        Mockito.when(matchingService.matchJobs(1L)).thenThrow(new DataIsNotReadyException(""));
+        Mockito.when(matchingService.matchJobs(1L,3 )).thenThrow(new DataIsNotReadyException(""));
 
         mvc.perform(get("/api/workers/1/matchedJobs")
                 .accept(MediaType.APPLICATION_JSON)

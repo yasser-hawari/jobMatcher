@@ -1,4 +1,4 @@
-package com.sj.jobMatcher.rest;
+package com.sj.jobMatcher.service;
 
 public class WorkerNotFoundException extends Exception {
 
