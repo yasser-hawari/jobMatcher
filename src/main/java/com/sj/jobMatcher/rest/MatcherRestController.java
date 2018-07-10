@@ -21,8 +21,7 @@ public class MatcherRestController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MatcherRestController.class);
 
-
-    private int maxResults = 3;
+    private int maxResults;
 
     protected MatchingService matchingService;
 
